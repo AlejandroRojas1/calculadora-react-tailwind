@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Button = ({value}) => {
+const Button = ({value, custom}) => {
+
   return (
     <>
-    <button className='border-2 border-black size-10 font-medium m-2'>{value}</button>
+    <button className= {`${ custom } w-full border border-black rounded-lg shadow-noBlurButton shadow-black size-10 font-medium bg-white`}>{value}</button>
     </>
   )
 }
